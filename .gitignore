@@ -24,3 +24,30 @@
 /dialogue.tab
 /dialogue.txt
 /strings.json
+
+# Новые настройки
+
+# VS Code settings (personal IDE configs)
+.vscode/
+game/.vscode/
+
+# Progressive download file
+progressive_download.txt
+
+# System files (добавьте на всякий случай)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled Python files (если появятся)
+__pycache__/
+*.pyc
+
+# Build outputs (когда начнете собирать игру)
+*-dists/
+*.exe
+*.apk
+*.aab
+*.zip
+*.7z
+*.rar
