@@ -51,3 +51,8 @@ __pycache__/
 *.zip
 *.7z
 *.rar
+*.tar.bz2
+
+# Translation compiled files
+game/tl/**/*.rpym
+game/tl/**/*.rpymc
