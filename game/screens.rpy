@@ -9,6 +9,7 @@ init offset = -1
 ## Стили
 ################################################################################
 
+
 style default:
     properties gui.text_properties()
     language gui.language
@@ -1330,12 +1331,14 @@ style notify_text:
 
 
 screen nvl(dialogue, items=None):
-
+    
     window:
         style "nvl_window"
+        
 
         has vbox:
             spacing gui.nvl_spacing
+            
 
         ## Показывает диалог или в vpgrid, или в vbox.
         if gui.nvl_height:
@@ -1386,6 +1389,8 @@ define config.nvl_list_length = gui.nvl_list_length
 style nvl_window is default
 style nvl_entry is default
 
+
+
 style nvl_label is say_label
 style nvl_dialogue is say_dialogue
 
@@ -1395,6 +1400,7 @@ style nvl_button_text is button_text
 style nvl_window:
     xfill True
     yfill True
+    top_padding 100
 
     background "gui/nvl.png"
     padding gui.nvl_borders.padding

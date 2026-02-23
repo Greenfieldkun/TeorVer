@@ -23,8 +23,8 @@ screen guidebook():
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 1050
-        ysize 750
+        xsize 1200
+        ysize 700
         
         
         # Блокируем распространение кликов внутри фрейма
@@ -33,8 +33,10 @@ screen guidebook():
             xfill True
             yfill True
             action NullAction()  # Запрещаем закрытие при клике внутри фрейма
-            left_margin 40
-            right_margin 40
+            left_margin 80
+            right_margin 80
+            top_margin 40
+            bottom_margin 80
             
             # Кнопка-крестик в левом верхнем углу (абсолютное позиционирование)
             textbutton "Назад": 
@@ -45,19 +47,21 @@ screen guidebook():
                 yalign 0.0
                 xoffset 80
                 yoffset 20
+
+                
             
             vbox:
-                spacing 20
+                spacing 60
                 
                 # Заголовок по центру
                 text "Справочник":
                     xalign 0.5
-                    yoffset 20
-                    size gui.interface_text_size
+                    yoffset 12
+                    size gui.label_text_size
                     font "palatinolinotype_bold.ttf"
-                    color gui.selected_color
+                    color gui.accent_color
                 
-                null height 20
+
                 
                 viewport:
                     # scrollbars "vertical"

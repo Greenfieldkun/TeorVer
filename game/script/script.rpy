@@ -23,7 +23,7 @@ define circleirisout = ImageDissolve("imagedissolve circleiris.png", 2.0, 8)
 #Определение СТИЛЕЙ и ЦВЕТОВ
 
 style def:
-    color "#FFB251"
+    color "#F7E3C1"
 
 style hl:
     color "#FFB251"
