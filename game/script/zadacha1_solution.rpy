@@ -1,0 +1,1 @@
+label zadacha1_solution:

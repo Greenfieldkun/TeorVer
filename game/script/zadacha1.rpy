@@ -2,6 +2,8 @@ label zadacha1:
 
     $ slowTransition('Задача 1')
 
+    show screen guidebook_button
+
     nvl show slow_dissolve
 
     nvl_narrator_white "Превосходство Кирагуры над горе-детективами, 

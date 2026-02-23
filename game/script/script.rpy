@@ -20,9 +20,24 @@ define circleirisin = ImageDissolve("imagedissolve circleiris.png", 2.0, 8 , rev
 
 define circleirisout = ImageDissolve("imagedissolve circleiris.png", 2.0, 8)
 
+#Определение СТИЛЕЙ и ЦВЕТОВ
+
+style def:
+    color "#FFB251"
+
+style hl:
+    color "#FFB251"
+    font "palatinolinotype_bold.ttf"
+
+#Определение ПЕРЕМЕННЫХ
+
+init python:
+
+    zadacha1_firstTry = True
+
 #Определение АНИМАЦИЙ
 
-transform lookAround:
+transform walkAround:
     # Начальная позиция слева
     xalign 0.0
     yalign 1.0
@@ -72,20 +87,24 @@ transform lookAround:
     ease 0.3 xalign 0.5 yoffset 15
 
 
-#Определение СТИЛЕЙ и ЦВЕТОВ
-
-style def:
-    color "#FFB251"
-
-style hl:
-    color "#FFB251"
-    font "palatinolinotype_bold.ttf"
-
-#Определение ПЕРЕМЕННЫХ
-
-init python:
-
-    zadacha1_firstTry = True
+transform lookAround:
+    xalign 0.5
+    xzoom 1.0
+    
+    # Осмотрелся направо
+    ease 0.7 xzoom -1.0
+    pause 0.8  # задержка, смотрит направо
+    
+    # Осмотрелся налево
+    ease 0.7 xzoom 1.0
+    pause 0.8  # задержка, смотрит налево
+    
+    # Еще раз направо (более быстро)
+    ease 0.4 xzoom -1.0
+    pause 0.4
+    
+    # Возврат в центр
+    ease 0.5 xzoom 1.0
 
 
 # Вместо использования оператора image можете просто

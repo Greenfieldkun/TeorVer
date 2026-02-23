@@ -8,6 +8,6 @@ label zadacha1_explanation:
 
     nvl clear
 
-    nvl_narrator_white "Текст1"
+    nvl_narrator_white "Затем, определимся, какую формулу нам лучше использовать."
 
 
