@@ -7,9 +7,11 @@ label zadacha1_answer:
             "Попробовать еще раз":
                 jump zadacha1_menu1
             
-            "Записать условие":
-                #Проверка флага. если это первое об
+            "Посмотреть объяснение":
                 jump zadacha1_explanation
+
+            "Посмотреть решение":
+                jump zadacha1_solution
 
     jump zadacha1_menu1
 

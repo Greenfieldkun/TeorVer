@@ -2,6 +2,8 @@ label zadacha1:
 
     $ slowTransition('Задача 1')
 
+    show quiz
+
     show screen guidebook_button
 
     nvl show slow_dissolve
