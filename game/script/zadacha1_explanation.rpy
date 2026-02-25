@@ -27,10 +27,11 @@ label zadacha1_explanation:
     $ menu = nvl_menu
 
     menu:
-        nvl_narrator_white "Что сделать?"
+        nvl_narrator_white "{i}Что сделать?{/i}"
 
         "Дать ответ":
             #nvl clear
+            $ zadacha1_firstTry=True
             jump zadacha1_answer
 
         "Посмотреть решение":
