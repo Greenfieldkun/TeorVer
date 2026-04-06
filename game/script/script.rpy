@@ -1,6 +1,6 @@
 ﻿# Определение персонажей игры.
 
-define k = Character('Кирагуро Хуёдзава', color="#beb1ce") #b11b3b
+define k = Character('Акияма Кэй', color="#beb1ce") #b11b3b
 
 define nvl_narrator_white = Character(kind=nvl_narrator, what_color="#ffffff")
 
@@ -115,15 +115,19 @@ transform lookAround:
 # Игра начинается здесь:
 
 init python:
-    def slowTransition(text, duration=2.5, speed=8):
+    def slowTransition(text, duration=2.5, speed=8, wait_for_click=False):
         renpy.scene()
         renpy.show("black")
         renpy.with_statement(dissolve)
 
         renpy.show_screen("slow_text", display_text=text, speed=speed)
-        renpy.pause(duration)
-        renpy.hide_screen("slow_text")
         
+        if wait_for_click:
+            renpy.pause(True)          # ждём клик
+        else:
+            renpy.pause(duration)      # ждём время
+        
+        renpy.hide_screen("slow_text")
         renpy.with_statement(dissolve)
         renpy.pause(0.5)
         

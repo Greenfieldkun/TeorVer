@@ -52,7 +52,7 @@ label zadacha1_answer_extra:
         "Змеи или Осы": #Правильный вариант 
             thoughts "Да, именно так!" 
             $ zadacha1_firstTry=False
-            #jump #продолжение 
+            jump choice1
 
         "Осы или Тигры":
             thoughts "Нет, должно быть, я в чем-то просчитался."
