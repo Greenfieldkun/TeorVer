@@ -1,0 +1,42 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script/zadacha1_answer.rpy", line 23, in script
+FileNotFoundError: Couldn't find file 'gui/window_icon.png'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script/zadacha1_answer.rpy", line 23, in script
+  File "renpy/ast.py", line 1815, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+             ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/menuexports.py", line 135, in menu
+    rv = renpy.store.menu(new_items)
+         ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "renpy/exports/menuexports.py", line 418, in display_menu
+    rv = renpy.ui.interact(mouse="menu", type=type, roll_forward=roll_forward)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ui.py", line 304, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 2174, in interact
+    self.start()
+    ~~~~~~~~~~^^
+  File "renpy/display/core.py", line 1019, in start
+    self.post_init()
+    ~~~~~~~~~~~~~~^^
+  File "renpy/display/core.py", line 1102, in post_init
+    self.set_icon()
+    ~~~~~~~~~~~~~^^
+  File "renpy/display/core.py", line 1155, in set_icon
+    with renpy.loader.load(icon, directory="images") as f:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^      
+  File "renpy/loader.py", line 698, in load
+    raise FileNotFoundError("Couldn't find file '%s'." % name)
+FileNotFoundError: Couldn't find file 'gui/window_icon.png'.
+
+Windows-10-10.0.19045-SP0 AMD64
+Ren'Py 8.4.1.25072401
+TeorVer 1.0
+Mon Apr  6 19:02:56 2026
