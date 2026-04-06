@@ -1,9 +1,0 @@
-﻿I'm sorry, but errors were detected in your script. Please correct the
-errors listed below, and try again.
-
-
-File "game/script/end.rpy", line 5: Indentation mismatch.
-    narrator "Спасибо за внимание!"
-
-Ren'Py Version: Ren'Py 8.4.1.25072401
-Mon Apr  6 18:51:23 2026
